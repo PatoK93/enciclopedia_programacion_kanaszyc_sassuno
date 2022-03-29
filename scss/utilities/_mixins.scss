@@ -1,0 +1,4 @@
+@mixin titulo($normal, $color) {
+    font-style: $normal;
+    color: $color;
+}

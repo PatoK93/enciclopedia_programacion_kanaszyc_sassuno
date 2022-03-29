@@ -1,6 +1,7 @@
 /***Imports***/
 
 @import "../utilities/vars";
+@import "../utilities/maps";
 
 /***Variables locales***/
 
@@ -37,8 +38,19 @@ img {
 
 /***iframe***/
 
+
+/***extend***/
+
 iframe {
     width: 100%;
+}
+
+.iframe--modificado {
+    @extend iframe;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 
@@ -50,4 +62,11 @@ a:hover {
 
 .linksDerecha {
     justify-content: right;
+}
+
+
+/***map-get***/
+
+.fondo {
+    background-color: map-get($estilosVarios, fondo);
 }

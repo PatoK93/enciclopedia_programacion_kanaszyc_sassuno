@@ -1,3 +1,6 @@
+/***Imports***/
+
+@import "../utilities/mixins";
 header {
     position: sticky;
     top: 0px;
@@ -7,6 +10,19 @@ header {
 
 /***Nav***/
 
+
+/***nesting***/
+
 ul {
     justify-content: end;
+    a:hover {
+        background-color: white;
+    }
+}
+
+
+/***mixin***/
+
+.about {
+    @include titulo(italic, green);
 }

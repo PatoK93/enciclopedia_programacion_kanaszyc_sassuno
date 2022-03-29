@@ -1,0 +1,14 @@
+/***map***/
+
+$titulos:( lenguajes: red, frameworks: blue, basesdedatos:orange, ides:yellow);
+@each $titulo,
+$color in $titulos {
+    .title--#{$titulo} {
+        color: $color;
+    }
+}
+
+
+/***map-get**/
+
+$estilosVarios: ( fondo: red);

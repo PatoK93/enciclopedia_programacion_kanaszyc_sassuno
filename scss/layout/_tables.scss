@@ -7,3 +7,16 @@
 th {
     text-align: $centrado;
 }
+
+
+/***nesting***/
+
+tr {
+    background-color: aquamarine;
+    td {
+        background-color: black;
+        &:hover {
+            zoom: 150%;
+        }
+    }
+}
