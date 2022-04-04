@@ -1,6 +1,6 @@
 /***map***/
 
-$titulos:( lenguajes: red, frameworks: blue, basesdedatos:orange, ides:yellow);
+$titulos:( lenguajes: red, frameworks: blue, basesdedatos:orange, ides:purple);
 @each $titulo,
 $color in $titulos {
     .title--#{$titulo} {
@@ -11,4 +11,5 @@ $color in $titulos {
 
 /***map-get**/
 
-$estilosVarios: ( fondo: red);
+
+/*$estilosVarios: ( fondo: red);*/

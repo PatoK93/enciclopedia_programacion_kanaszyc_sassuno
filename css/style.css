@@ -12,6 +12,10 @@
 p {
   color: whitesmoke; }
 
+h2 {
+  color: whitesmoke;
+  font-style: normal; }
+
 /***Imports***/
 header {
   position: sticky;
@@ -26,10 +30,9 @@ ul {
     background-color: white; }
 
 /***mixin***/
-.about {
-  font-style: italic;
-  color: green; }
-
+/*.about {
+    @include titulo(italic, green);
+}*/
 /***Fonts online***/
 /***Reseteo del body***/
 body {
@@ -46,7 +49,8 @@ body {
 /***Imports***/
 /***th***/
 th {
-  text-align: center; }
+  text-align: center;
+  font-style: normal; }
 
 /***nesting***/
 tr {
@@ -68,9 +72,10 @@ tr {
   color: orange; }
 
 .title--ides {
-  color: yellow; }
+  color: purple; }
 
 /***map-get**/
+/*$estilosVarios: ( fondo: red);*/
 /***Variables locales***/
 /***Imagenes***/
 img {
@@ -111,9 +116,9 @@ a:hover {
   justify-content: right; }
 
 /***map-get***/
-.fondo {
-  background-color: red; }
-
+/*.fondo {
+    background-color: map-get($estilosVarios, fondo);
+}*/
 /***map***/
 .title--lenguajes {
   color: red; }
@@ -125,6 +130,25 @@ a:hover {
   color: orange; }
 
 .title--ides {
-  color: yellow; }
+  color: purple; }
 
 /***map-get**/
+/*$estilosVarios: ( fondo: red);*/
+form div label {
+  color: white;
+  font-size: large; }
+
+.fondoCards {
+  background-color: black; }
+
+.centrado {
+  text-align: center; }
+
+.imagenStandard {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px; }
+
+.colorTitulo {
+  color: whitesmoke; }

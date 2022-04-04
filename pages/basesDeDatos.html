@@ -51,7 +51,7 @@
             <div class="container-fluid">
                 <div class="row txtCentrado texto_3d">
                     <div>
-                        <h2 class="fondo">SQL</h2>
+                        <h2 id="sql" class="fondo">SQL</h2>
                     </div>
                 </div>
             </div>
@@ -119,6 +119,90 @@
             <div class="container-fluid">
                 <div class="row">
                     <iframe class="iframe--modificado" width="1164" height="655" src="https://www.youtube.com/embed/rMswGXhCKJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row txtCentrado texto_3d">
+                    <div>
+                        <h2 id="nosql" class="fondo">NOSQL</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 imagenCentrada img">
+                        <img src="../assets/nosqlone.jpg" class="rounded" alt="No SQL Server one">
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 imagenCentrada img">
+                        <img src="../assets/nosqltwo.png" class="rounded-circle" alt="No SQL Server two">
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 imagenCentrada img">
+                        <img src="../assets/nosqlthree.jpg" class="img-thumbnail" alt="No SQL Server three">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row txtJustificado">
+                    <p>
+                        En informática, NoSQL (a veces llamado "no solo SQL") es una amplia clase de sistemas de gestión de bases de datos que difieren del modelo clásico de SGBDR (Sistema de Gestión de Bases de Datos Relacionales) en aspectos importantes, siendo el más destacado
+                        que no usan SQL como lenguaje principal de consultas. Los datos almacenados no requieren estructuras fijas como tablas, normalmente no soportan operaciones JOIN, ni garantizan completamente ACID (atomicidad, consistencia, aislamiento
+                        y durabilidad) y habitualmente escalan bien horizontalmente. Los sistemas NoSQL se denominan a veces "no solo SQL" para subrayar el hecho de que también pueden soportar lenguajes de consulta de tipo SQL. Por lo general, los investigadores
+                        académicos se refieren a este tipo de bases de datos como almacenamiento estructurado, término que abarca también las bases de datos relacionales clásicas. A menudo, las bases de datos NoSQL se clasifican según su forma de almacenar
+                        los datos, y comprenden categorías como clave-valor, las implementaciones de BigTable, bases de datos documentales, y bases de datos orientadas a grafos. Los sistemas de bases de datos NoSQL crecieron con las principales redes
+                        sociales, como Google, Amazon, Twitter y Facebook. Estas tenían que enfrentarse a desafíos con el tratamiento de datos que las tradicionales SGBDR no solucionaban. Con el crecimiento de la web en tiempo real existía una necesidad
+                        de proporcionar información procesada a partir de grandes volúmenes de datos que tenían unas estructuras horizontales más o menos similares. Estas compañías se dieron cuenta de que el rendimiento y sus propiedades de tiempo real
+                        eran más importantes que la coherencia, en la que las bases de datos relacionales tradicionales dedicaban una gran cantidad de tiempo de proceso. En ese sentido, a menudo, las bases de datos NoSQL están altamente optimizadas para
+                        las operaciones recuperar y agregar, y normalmente no ofrecen mucho más que la funcionalidad de almacenar los registros (p.ej. almacenamiento clave-valor). La pérdida de flexibilidad en tiempo de ejecución, comparado con los sistemas
+                        SQL clásicos, se ve compensada por ganancias significativas en escalabilidad y rendimiento cuando se trata con ciertos modelos de datos.
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row linksDerecha">
+                    <a href="https://es.wikipedia.org/wiki/NoSQL">Más información...</a>
+                </div>
+            </div>
+            <div class="container">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>Ventajas</th>
+                            <th>Desventajas</th>
+                        </tr>
+                    </thead>
+                    <tbody class="txtJustificado">
+                        <tr>
+                            <td>Versatilidad: La principal ventaja por la cual esta nueva tecnología difiere de las demás soluciones de bases de datos es la versatilidad que ofrece a crecimientos o cambios sobre la forma como almacena la información, si fuera
+                                necesario agregar un nuevo campo sobre una “colección” (en base de datos relacional se definen tablas), dado que se basa sobre una notación ligera de intercambio de documentos baso en notación JSON(Java Script Object Notation),
+                                simplemente se agregan sobre el documento y el sistema sigue operando sin agregar configuraciones extras.</td>
+                            <td>Atomicidad: No todas las bases de datos contienen la característica de la atomicidad en la información, esto quiere decir, que la información en ocasiones no es consistente, puede ser diferente en cada uno de los nodos replicas
+                                que se puedan configurar en la arquitectura de base de datos.</td>
+                        </tr>
+                        <tr>
+                            <td>Crecimiento Horizontal: Soportan una escalabilidad descentralizada, es decir, soportan estructuras distribuidas, si durante la operación se ve que el desempeño de los servidores tienden a bajar, se instalan nuevos nodos operativos
+                                para que balanceen la carga de trabajo, a esto le llaman crecimiento horizontal.</td>
+                            <td>Documentación del Software: Dado que NoSQL, es relativamente nuevo, las operaciones pueden ser limitadas y se requiera de conocimientos avanzados con el uso de la herramienta y las personas que se encuentran realizando estos
+                                desarrollos en el software tengan que invertir mas tiempo en los desarrollos.</td>
+                        </tr>
+                        <tr>
+                            <td>Disponibilidad de Recursos: No se requieren servidores con una gran cantidad de recursos disponibles para operar, pueden empezar a operar con bajos recursos e ir creciendo dependiendo de las necesidades sin tener que detener
+                                los servicios de operación.</td>
+                            <td>Estándares en el lenguaje: No se tiene un estándar definido entre los diferentes motores que ofrecen este servicio, es decir, por ejemplo: DB2 para poder insertar información sobre su base de datos, el manejo de los objetos
+                                JSON no es el mismo como se utiliza en MondosDB y con ellos la diversidad de conocimientos que se tiene que tener dependiendo de la solución NoSQL se vaya a utilizar.</td>
+                        </tr>
+                        <tr>
+                            <td>Optimización: Los sistemas NoSQL tienen un algoritmo interno para reescribir las consultas escritas por los usuarios o las aplicaciones programadas, esto con el fin de no sobrecargar el rendimiento de los servidores y mantener
+                                un nivel optimo en las operaciones.</td>
+                            <td>Herramientas GUI(Graphical User Interface): Las herramientas que ofrecen para la administración de estas herramientas, suelen tener acceso por consola, no tienen una interfaz gráfica, se requiere conocimiento amplio de las
+                                instrucciones a utilizar para su mantenimiento.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <iframe class="iframe--modificado" width="1164" height="655" src="https://www.youtube.com/embed/0buKQHokLK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
